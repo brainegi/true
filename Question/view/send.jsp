@@ -42,9 +42,9 @@
 	<br>
 	<h4 align="center">お客様情報詳細</h4>
 
-	<table align="center">
+	<table align="center" width="1000"  border="1">
 		<tr>
-			<td bgcolor="blue">No</td>
+			<td color="white" bgcolor="blue">No</td>
 			<td bgcolor="blue">名前</td>
 			<td bgcolor="blue">年齢</td>
 			<td bgcolor="blue">性別</td>

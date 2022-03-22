@@ -21,6 +21,8 @@ public class ListServlet extends HttpServlet {
 		String error = "";
 		String cmd = "";
 
+		try {
+
 		// ①セッションから"userObj"を取得する。(セッション切れの場合はlogin.jspに遷移する)
 		HttpSession session = request.getSession();
 		User userObj = (User) session.getAttribute("userObj");
@@ -28,12 +30,8 @@ public class ListServlet extends HttpServlet {
 		if (userObj == null) {
 			error = "ログインし直してください。";
 			cmd = "login";
-			request.setAttribute("error", error);
-			request.setAttribute("cmd", cmd);
 			return;
 		}
-
-		try {
 
 			// DAOクラスオブジェクト化
 			questionDAO qDao = new questionDAO();
