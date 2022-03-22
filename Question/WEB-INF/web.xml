@@ -1,0 +1,63 @@
+<web-app>
+	<!-- ログイン機能 -->
+	<servlet>
+			<servlet-name>loginServletMapping</servlet-name>
+			<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+			<servlet-name>loginServletMapping</servlet-name>
+			<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<!-- ログアウト機能 -->
+	<servlet>
+		<servlet-name>logoutMapping</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutMapping</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<!-- お問い合わせ登録機能 -->
+	<servlet>
+		<servlet-name>insertMapping</servlet-name>
+		<servlet-class>servlet.InsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insertMapping</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+
+	<!-- 詳細機能 -->
+	<servlet>
+		<servlet-name>detailMapping</servlet-name>
+		<servlet-class>servlet.DetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>detailMapping</servlet-name>
+		<url-pattern>/detail</url-pattern>
+	</servlet-mapping>
+
+	<!-- 一覧機能 -->
+	<servlet>
+		<servlet-name>listMapping</servlet-name>
+		<servlet-class>servlet.ListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listMapping</servlet-name>
+		<url-pattern>/list</url-pattern>
+	</servlet-mapping>
+
+	<!-- メール管理機能 -->
+	<servlet>
+		<servlet-name>MailMapping</servlet-name>
+		<servlet-class>servlet.MailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MailMapping</servlet-name>
+		<url-pattern>/mail</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
