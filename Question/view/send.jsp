@@ -42,21 +42,21 @@
 	<br>
 	<h4 align="center">お客様情報詳細</h4>
 
-	<table align="center" width="1000"  border="1">
-		<tr>
-			<td color="white" bgcolor="blue">No</td>
-			<td bgcolor="blue">名前</td>
-			<td bgcolor="blue">年齢</td>
-			<td bgcolor="blue">性別</td>
-			<td bgcolor="blue">住所</td>
-			<td bgcolor="blue">メールアドレス</td>
-			<td bgcolor="blue">お問い合わせ内容</td>
-			<td bgcolor="blue">その他</td>
-			<td bgcolor="blue">お問い合わせ日時</td>
-			<td bgcolor="blue">送信/未送信</td>
+	<table align="center" border="1">
+		<tr style="text-align:center">
+			<td style="color:white; width:50px;" bgcolor="blue">No</td>
+			<td style="color:white; width:100px;" bgcolor="blue">名前</td>
+			<td style="color:white; width:50px;" bgcolor="blue">年齢</td>
+			<td style="color:white; width:50px;" bgcolor="blue">性別</td>
+			<td style="color:white; width:100px;" bgcolor="blue">住所</td>
+			<td style="color:white; width:200px;" bgcolor="blue">メールアドレス</td>
+			<td style="color:white; width:240px;" bgcolor="blue">お問い合わせ内容</td>
+			<td style="color:white; width:360px;" bgcolor="blue">その他</td>
+			<td style="color:white; width:150px;" bgcolor="blue">お問い合わせ日時</td>
+			<td style="color:white; width:100px;" bgcolor="blue">送信/未送信</td>
 		</tr>
 
-		<tr>
+		<tr style="text-align:center">
 			<td><%=question.getNum()%></td>
 			<td><%=question.getName()%></td>
 			<td><%=question.getAge()%></td>
@@ -64,7 +64,7 @@
 			<td><%=question.getAdress()%></td>
 			<td><%=question.getMail()%></td>
 			<td><%=question.getSelected()%></td>
-			<td><%=question.getText()%></td>
+			<td style="text-align:left"><%=question.getText()%></td>
 			<td><%=question.getDate()%></td>
 			<td><%=question.getTf()%></td>
 		</tr>
