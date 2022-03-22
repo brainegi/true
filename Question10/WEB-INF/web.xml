@@ -1,0 +1,22 @@
+<web-app>
+	<!-- ログイン機能 -->
+	<servlet>
+			<servlet-name>loginServletMapping</servlet-name>
+			<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+			<servlet-name>loginServletMapping</servlet-name>
+			<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<!-- ログアウト機能 -->
+	<servlet>
+		<servlet-name>logoutMapping</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutMapping</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+</web-app>
