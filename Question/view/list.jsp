@@ -41,14 +41,14 @@
 	<h2 align="center">お問い合わせ一覧</h2>
 
 	<%--メイン --%>
-	<table align="center">
+	<table align="center" >
 		<tr>
-			<th style="width: 100px;" bgcolor="blue">No.</th>
-			<th style="width: 200px;" bgcolor="blue">名前</th>
-			<th style="width: 100px;" bgcolor="blue">性別</th>
-			<th style="width: 150px;" bgcolor="blue">お問い合わせ日</th>
-			<th style="text-align: center; width: 300px;" bgcolor="blue">お問い合わせ内容</th>
-			<th style="width: 100px;" bgcolor="blue">送信/ 未送信</th>
+			<th style="width: 100px; color:white;" bgcolor="blue" >No.</th>
+			<th style="width: 200px; color:white;" bgcolor="blue">名前</th>
+			<th style="width: 100px; color:white;" bgcolor="blue">性別</th>
+			<th style="width: 150px; color:white;" bgcolor="blue">お問い合わせ日</th>
+			<th style="text-align: center; width: 400px; color:white;" bgcolor="blue">お問い合わせ内容</th>
+			<th style="width: 100px; color:white;" bgcolor="blue">送信/ 未送信</th>
 		</tr>
 
 		<%
@@ -57,21 +57,27 @@
 					Question qObj = list.get(i);
 		%>
 		<tr style="text-align: center;">
-			<td style="width: 100px;"><a
-				href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>"><%=qObj.getNum()%></a></td>
+			<td style="width: 100px;"><%=qObj.getNum()%></td>
 			<td style="width: 200px;"><%=qObj.getName()%></td>
 			<td style="width: 100px;"><%=qObj.getSex()%></td>
 			<td style="width: 150px;"><%=qObj.getDate()%></td>
-			<td style="width: 300px;"><a
-				href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>"><%=qObj.getText()%></a></td>
-			<td style="width: 100px;"><a
-				href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>"><%=qObj.getTf()%></a></td>
+			<td style="width: 400px;"><%=qObj.getText()%></td>
+			<td style="width: 100px;">
+				<% if(list.get(i).getTf().equals("送信済")){ %>
+					<a href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>">
+						<input type="submit" value=<%=qObj.getTf()%> style="color:dimgray; background-color:ivory;">
+					</a>
+				<% } else{ %>
+					<a href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>">
+						<input type="submit" value=<%=qObj.getTf()%> style="color:darkred; background-color:sandybrown;">
+					</a>
+				<% } %>
+			</td>
 		</tr>
 		<%
 			}
 			}
 		%>
-
 
 	</table>
 </body>
