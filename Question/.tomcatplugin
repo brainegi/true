@@ -9,5 +9,5 @@
     <warLocation></warLocation>
     <extraInfo></extraInfo>
     <mavenClasspath>false</mavenClasspath>
-    <webPath>/Question</webPath>
+    <webPath>/Question10</webPath>
 </tomcatProjectProperties>
