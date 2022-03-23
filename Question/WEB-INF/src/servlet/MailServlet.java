@@ -29,8 +29,6 @@ public class MailServlet extends HttpServlet {
 			if (userObj == null) {
 				error = "ログインし直してください。";
 				cmd = "login";
-				request.setAttribute("error", error);
-				request.setAttribute("cmd", cmd);
 				return;
 			}
 

@@ -25,7 +25,7 @@
 			</tr>
 		</table>
 
-		<body>
+		<body bgcolor=#F0FFF0>
 			<h2 align="center">お問い合わせ完了</h2>
 			<table align="center">
 				<tr>

@@ -18,7 +18,7 @@
 </head>
 
 
-<body>
+<body bgcolor=#F0FFF0>
 	<!--ヘッダー部分  -->
 	<header>
 		<h1 style="text-align: center; color: blue">管理者画面</h1>
