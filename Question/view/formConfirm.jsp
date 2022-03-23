@@ -11,7 +11,7 @@
 	<hr style="height: 4px; background-color: black">
 </header>
 
-<body bgcolor="pink">
+<body bgcolor=#FFDAB9>
 	<h2 align="center">お問い合わせ完了</h2>
 	<table align="center">
 		<tr>

@@ -14,7 +14,7 @@
 	<hr style="height: 4px; background-color: blue">
 </header>
 
-<body>
+<body bgcolor=#F0FFF0>
 	<a href="<%=request.getContextPath()%>/view/form.jsp">フォーム</a>
 
 	<br>

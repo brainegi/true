@@ -18,7 +18,7 @@
 	<hr style="height: 4px; background-color: blue">
 </header>
 
-<body style="text-align: center;">
+<body style="text-align: center;" bgcolor=#F0FFF0>
 	<h2>管理者メニュー</h2>
 
 	<p style="font-size: 20;">

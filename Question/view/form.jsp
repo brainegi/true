@@ -13,7 +13,7 @@
 </header>
 
 <!--body情報-->
-<body bgcolor="pink">
+<body bgcolor=#FFDAB9>
 	<a href="<%=request.getContextPath()%>/view/login.jsp">管理者用ログイン</a>
 
 

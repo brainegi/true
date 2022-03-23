@@ -37,12 +37,12 @@
 	</tr>
 </table>
 
-<body>
+<body bgcolor=#F0FFF0>
 	<h2 align="center">お問い合わせ返信</h2>
 	<br>
 	<h4 align="center">お客様情報詳細</h4>
 
-	<table align="center" border="1">
+	<table align="center" border="1" bgcolor="white">
 		<tr style="text-align:center">
 			<td style="color:white; width:50px;" bgcolor="blue">No</td>
 			<td style="color:white; width:100px;" bgcolor="blue">名前</td>
