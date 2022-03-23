@@ -45,5 +45,27 @@
 	</table>
 
 
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<footer>
+		<hr style="height: 4px; background-color: red">
+		<p>2022/03 お問い合わせシステム</p>
+	</footer>
 </body>
 </html>
