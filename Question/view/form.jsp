@@ -14,9 +14,6 @@
 
 <!--body情報-->
 <body bgcolor=#FFDAB9>
-	<a href="<%=request.getContextPath()%>/view/login.jsp">管理者用ログイン</a>
-
-
 
 	<form action="<%=request.getContextPath()%>/insert" method="get">
 		<table align="center">
@@ -214,10 +211,13 @@
 	<br>
 	<br>
 	<br>
+	<br>
 
 	<footer>
+
 		<hr style="height: 4px; background-color: black">
 		<p>2022/03 お問い合わせシステム</p>
+		<a href="<%=request.getContextPath()%>/view/login.jsp">管理者用ログイン</a>
 	</footer>
 
 
