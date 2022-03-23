@@ -39,7 +39,7 @@ public class MailServlet extends HttpServlet {
 			SendMail sendMail = new SendMail();
 
 			// 送信元と送信者名をセット
-			sendMail.setFromInfo("system.project.team08@kanda-it-school-system.com", "お問い合わせシステム");
+			sendMail.setFromInfo("system.project.team08@kanda-it-school-system.com", "神田英会話スクール");
 
 			// 送信先をセット
 			String mail = request.getParameter("mail");

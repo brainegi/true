@@ -8,12 +8,12 @@
 </head>
 
 <header>
-	<h1 style="text-align: center">お問い合わせフォーム</h1>
-	<hr style="height: 4px; background-color: black">
+	<h1 style="text-align: center; color:saddlebrown">お問い合わせフォーム</h1>
+	<hr style="height: 4px; background-color: saddlebrown">
 </header>
 
 <!--body情報-->
-<body bgcolor=#FFDAB9>
+<body bgcolor=#FFE4C4>
 
 	<form action="<%=request.getContextPath()%>/insert" method="get">
 		<table align="center">
@@ -215,7 +215,7 @@
 
 	<footer>
 
-		<hr style="height: 4px; background-color: black">
+		<hr style="height: 4px; background-color: saddlebrown">
 		<p>2022/03 お問い合わせシステム</p>
 		<a href="<%=request.getContextPath()%>/view/login.jsp">管理者用ログイン</a>
 	</footer>

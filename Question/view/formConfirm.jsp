@@ -7,8 +7,8 @@
 </head>
 
 <header>
-	<h1 style="text-align: center">お問い合わせシステム</h1>
-	<hr style="height: 4px; background-color: black">
+	<h1 style="text-align: center; color:saddlebrown">お問い合わせシステム</h1>
+	<hr style="height: 4px; background-color: saddlebrown">
 </header>
 
 <body bgcolor=#FFDAB9>
@@ -51,7 +51,7 @@
 
 
 	<footer>
-		<hr style="height: 4px; background-color: black">
+		<hr style="height: 4px; background-color: saddlebrown">
 		<p>2022/03 お問い合わせシステム</p>
 	</footer>
 
