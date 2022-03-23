@@ -42,7 +42,7 @@
 
 	<%--メイン --%>
 
-	<table align="center" border="4"
+	<table align="center" border="4" bgcolor="white"
 		style="border-width: 3px; border-style: solid; border-collapse: collapse; border-color: black">
 
 		<tr>
