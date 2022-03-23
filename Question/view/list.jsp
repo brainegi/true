@@ -42,15 +42,17 @@
 
 	<%--メイン --%>
 
-	<table align="center"  border="4"  style="border-width:3px; border-style:solid ; border-collapse:collapse; border-color:black ">
+	<table align="center" border="4"
+		style="border-width: 3px; border-style: solid; border-collapse: collapse; border-color: black">
 
 		<tr>
-			<th style="width: 100px; color:white;" bgcolor="blue" >No.</th>
-			<th style="width: 200px; color:white;" bgcolor="blue">名前</th>
-			<th style="width: 100px; color:white;" bgcolor="blue">性別</th>
-			<th style="width: 150px; color:white;" bgcolor="blue">お問い合わせ日</th>
-			<th style="text-align: center; width: 400px; color:white;" bgcolor="blue">お問い合わせ内容</th>
-			<th style="width: 100px; color:white;" bgcolor="blue">送信/ 未送信</th>
+			<th style="width: 100px; color: white;" bgcolor="blue">No.</th>
+			<th style="width: 200px; color: white;" bgcolor="blue">名前</th>
+			<th style="width: 100px; color: white;" bgcolor="blue">性別</th>
+			<th style="width: 150px; color: white;" bgcolor="blue">お問い合わせ日</th>
+			<th style="text-align: center; width: 400px; color: white;"
+				bgcolor="blue">お問い合わせ内容</th>
+			<th style="width: 100px; color: white;" bgcolor="blue">送信/ 未送信</th>
 		</tr>
 
 		<%
@@ -65,16 +67,21 @@
 			<td style="width: 150px;"><%=qObj.getDate()%></td>
 			<td style="width: 400px;"><%=qObj.getText()%></td>
 			<td style="width: 100px;">
-
-				<% if(list.get(i).getTf().equals("未送信")){ %>
-					<a href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>">
-						<input type="submit" value=<%=qObj.getTf()%> style="color:dimgray; background-color:ivory;">
-					</a>
-				<% } else{ %>
-					<a href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>">
-						<input type="submit" value=<%=qObj.getTf()%> style="color:darkred; background-color:sandybrown;">
-					</a>
-				<% } %>
+				<%
+					if (list.get(i).getTf().equals("未送信")) {
+				%> <a
+				href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>">
+					<input type="submit" value=<%=qObj.getTf()%>
+					style="color: dimgray; background-color: ivory;">
+			</a> <%
+ 	} else {
+ %> <a
+				href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>">
+					<input type="submit" value=<%=qObj.getTf()%>
+					style="color: darkred; background-color: sandybrown;">
+			</a> <%
+ 	}
+ %>
 			</td>
 		</tr>
 		<%
@@ -83,6 +90,16 @@
 		%>
 
 	</table>
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<footer>
+		<hr style="height: 4px; background-color: blue">
+		<p>2022/03 お問い合わせシステム</p>
+	</footer>
 </body>
 
 </html>
