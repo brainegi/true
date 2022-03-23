@@ -38,6 +38,9 @@ public class InsertServlet extends HttpServlet {
 			String selected = request.getParameter("selected");
 			String text = request.getParameter("text");
 
+			// リクエストスコープに登録
+			request.setAttribute("name", name);
+
 			// 取得したものを格納
 			question.setName(name);
 			question.setAge(age);

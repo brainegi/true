@@ -1,5 +1,12 @@
 <!-- 管理者用送信完了画面 -->
 <%@page contentType="text/html; charset=UTF-8"%>
+<%@page import="bean.*"%>
+<%
+	User userObj = (User) session.getAttribute("userObj");
+	if (userObj == null) {
+		request.getRequestDispatcher("/view/login.jsp").forward(request, response);
+	}
+%>
 
 <html>
 <head>
