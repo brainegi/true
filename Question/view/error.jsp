@@ -23,7 +23,7 @@
 	<h2 align="center">◆◆◆エラー◆◆◆</h2>
 	<table align="center">
 		<tr>
-			<td><%=error%></td>
+			<td><font size="5"><%=error%></font></td>
 		</tr>
 		<tr>
 			<td align="center">
