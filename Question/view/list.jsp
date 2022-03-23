@@ -41,7 +41,9 @@
 	<h2 align="center">お問い合わせ一覧</h2>
 
 	<%--メイン --%>
-	<table align="center" >
+
+	<table align="center"  border="4"  style="border-width:3px; border-style:solid ; border-collapse:collapse; border-color:black ">
+
 		<tr>
 			<th style="width: 100px; color:white;" bgcolor="blue" >No.</th>
 			<th style="width: 200px; color:white;" bgcolor="blue">名前</th>
@@ -63,7 +65,8 @@
 			<td style="width: 150px;"><%=qObj.getDate()%></td>
 			<td style="width: 400px;"><%=qObj.getText()%></td>
 			<td style="width: 100px;">
-				<% if(list.get(i).getTf().equals("送信済")){ %>
+
+				<% if(list.get(i).getTf().equals("未送信")){ %>
 					<a href="<%=request.getContextPath()%>/detail?num=<%=qObj.getNum()%>">
 						<input type="submit" value=<%=qObj.getTf()%> style="color:dimgray; background-color:ivory;">
 					</a>
